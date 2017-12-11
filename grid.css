@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    display: grid;
+    /* grid-template-columns: 250px 300px 250px;
+    grid-template-rows: 100px 200px 100px; */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 20px;
+}
+
+.items {
+    background-color: red;
+    height: 100px;
+    border: 1px solid black;
+}

@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:rgb(37, 84, 185);
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    transition: top 0.4s;
+}
+
+.top {
+    top: 0px;
+}
+.btn:hover .top {
+    top: 30px;
+    cursor: pointer;
+}
+
+.bottom {
+    top: -30px;
+}
+.btn:hover .bottom {
+    top: 0px;
+    cursor: pointer;
+}

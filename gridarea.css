@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: rgb(49, 0, 128);
+    grid-area: header;
+}
+
+.main {
+    background-color: purple;
+    grid-area: main;
+}
+
+.about {
+    background-color: brown; 
+    grid-area: about;
+}
+
+
+.news {
+    background-color: rgb(209, 191, 191);
+    grid-area: news;
+}
+
+.links {
+    background-color: rgb(42, 165, 42);
+    grid-area: links;
+}
+
+.ads {
+    background-color: rgb(165, 108, 42);
+    grid-area: ads;
+}
+
+.footer {
+    background-color: rgb(0, 102, 128);
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main about news"
+    "main links ads"
+    "main footer footer";
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main about"
+        "main news"
+        "main ads"
+        "main links"
+        "main footer";
+    }
+}
+

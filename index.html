@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <button href="" class="btn">click here</button>
+        <div class="wrapper">
+            <div class="form">
+
+            </div>
+        </div>
+
+        <script>
+            var btn = document.getElementsByClassName("btn")[0];
+            btn.addEventListener("click", function(){
+                if(btn.classList.contains("active")){
+                    btn.classList.remove("active");
+                } else{
+                    btn.classList.add("active");
+                }
+            });
+        </script>
+    </body>
+</html>
